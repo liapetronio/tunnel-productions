@@ -1,11 +1,11 @@
 <template>
     <v-app-bar
       app
-      color="#0d1339"
+      color="#000000"
       elevation="0"
     >       
       <v-tabs
-        background-color="#0d1339"
+        background-color="#000000"
         dark
         active-class="active_tab"
         v-model="active_tab"
@@ -15,7 +15,7 @@
             <v-img
               alt="Logo"
               class="shrink mr-2 logo-image"
-              src="images/logo.svg"
+              src="images/logo.png"
               transition="scale-transition"
             />
         </v-tab>
@@ -37,12 +37,12 @@
             </div>
             </template>
             <v-list>
-              <v-list-item class="v-tab" to="/music" target="_blank">Music</v-list-item>
+              <v-list-item class="v-tab" to="/music">Music</v-list-item>
               <v-list-item  class="v-tab" to="/video">Video</v-list-item>
             </v-list>
           </v-menu>
     
-          <v-tabs-slider color="#5e8eff"></v-tabs-slider>
+          <v-tabs-slider color="#000000"></v-tabs-slider>
         </v-tabs>
 
 
@@ -72,27 +72,27 @@ export default {
     font-weight:500;
   }
 .v-list{
-  background-color:#0d1339;
+  background-color:#000000;
 }
 
 .logo-image{
-  max-width:200px !important;
+  max-width:150px !important;
 }
 .active_tab{
     font-weight:900;
-    /* background-color:#050b24; */
-    color:#5e8eff !important;
+    /* color:#5e8eff !important; */
   }
 
-  a:hover, #data-tab:hover{
-    color: white !important;
-    background-color:#5e8eff !important;
+  a:hover, #media-tab:hover{
+    font-weight:900;
+    background-color:black !important;
   }
   a {
     color: white !important;
   }
   #home-tab:hover{
-    background-color:#0d1339 !important;
+    font-weight:900;
+    background-color:#000000 !important;
   }
   .v-tab::before {
   display: none;

@@ -2,8 +2,7 @@
     <div>
       <div class="banner">
         <v-container>
-          <h1>Tunnel Productions</h1>
-          <button class="lg" to="/">Roam<span class="material-icons">east</span></button>
+          <!-- <button class="lg" to="/">Roam<span class="material-icons">east</span></button> -->
         </v-container>
       </div>
 
@@ -27,13 +26,14 @@ export default {
 
 
 .banner{
-  background-image: url("../../public/images/banner.png");
-  width:101%;
+  background-image: url("../../public/images/banner-0.png");
+  width:100%;
+  height:80vh;
   color:white;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding:60px 0px 72px 0px;
+  /* padding:60px 0px 72px 0px; */
   margin:0;
 }
 
@@ -41,6 +41,7 @@ export default {
   color:white;
   font-weight:900;
   font-size:3.6em;
+  line-height:1em;
 }
 
 .banner > .container >* {
