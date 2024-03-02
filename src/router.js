@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HomePage from '@/pages/HomePage';
-// import ProjectsPage from '@/pages/ProjectsPage';
+import MinecraftPage from '@/pages/MinecraftPage';
+
 
 
 Vue.use(VueRouter);
@@ -13,12 +14,13 @@ const router = new VueRouter({
             path: '/',
             name: 'HomePage',
             component: HomePage
+        },
+        {
+            path: '/minecraft',
+            name: 'MinecraftPage',
+            component: MinecraftPage
         }
-        // {
-        //     path: '/',
-        //     name: 'ProjectsPage',
-        //     component: ProjectsPage
-        // }
+
     ]
 });
 

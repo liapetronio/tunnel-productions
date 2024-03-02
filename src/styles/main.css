@@ -1,0 +1,218 @@
+main, body, #app{
+  font-size:16.5px !important;
+  color:#282828 !important;
+  font-family: 'Inter Tight', sans-serif !important;
+}
+/* .plot{
+  overflow:visible !important;
+} */
+
+p, p.text-body-1 {
+  font-family: 'Inter Tight', sans-serif !important;
+  color:#282828 !important;
+  margin: 16px 0px 24px 0px !important;
+}
+h1, h2, h3, h4, h5{
+  font-weight:900 !important;
+  color:#282828 !important;
+  margin:16px 0px !important;
+}
+h1{
+  font-size:2.8rem !important;
+  line-height:1.15em !important;
+}
+
+h2{
+  font-size:2rem !important;
+  line-height:1.2em !important;
+}
+h3{
+  font-size:1.55rem !important;
+  line-height:1.2rem !important;
+  font-weight:900 !important;
+}
+
+h4{
+  font-size:1.25rem !important;
+  line-height:1.2em;
+}
+
+
+b{
+  font-weight: 600 !important;
+}
+strong{
+  font-weight: 800 !important;
+}
+small{
+  color:#868686;
+}
+
+.center{
+  text-align:center;
+  margin:auto;
+}
+
+.v-input__details {
+
+  display:none !important;
+  }
+  .v-input{
+    padding-bottom:8px !important;
+  }
+  
+li{
+  margin:0.6em 0px;
+}
+
+
+.v-list-item--one-line .v-list-item-subtitle {
+  -webkit-line-clamp: 100 !important;
+}
+
+.v-list-item-subtitle {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  opacity: var(--v-medium-emphasis-opacity);
+  overflow: visible !important;
+  padding: 0;
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.0178571429em;
+  line-height: 1.4em !important;
+  text-transform: none;
+  overflow-wrap: break-word !important;
+  word-break:normal !important;
+}
+
+
+.v-card{
+  padding:24px 32px !important;
+  border:none;
+  word-break:normal !important;
+}
+
+.v-card-title {
+    word-break:normal !important;
+    word-wrap: normal !important;
+    white-space: wrap !important;
+}
+.card-subtitle{
+  font-weight:600;
+}
+.v-list-item-title{
+  word-break:normal !important;
+  word-wrap: normal !important;
+  white-space: wrap !important;
+}
+.v-card.elevation-1{
+  /* offset x, offset y, blur radius, spread radius, color */
+  box-shadow: 2px 2px 7px 3px rgba(220, 220, 220, 0.5) !important; 
+  
+}
+.v-card>ul>li{
+  font-size: 0.9em;
+}
+
+
+.scatter-plot > .title, .boxplot-plot > .title{
+  font-size:1em;
+  font-weight:900;
+  fill: #444444;
+}
+.tick > line{
+  stroke:#444444;
+  stroke-width:.25px;
+}
+.tick > line .dashed{
+  stroke-dasharray: 2px, 2px !important ;
+  stroke: black !important;
+  stroke-width: 0.5px !important;
+}
+.tick > text{
+  font-size:12px;
+  color:#444444;
+}
+.axis.title{
+  font-size:14px;
+  font-weight:700;
+  fill: #444444;
+}
+
+/* a{
+  color:#8e62c2;
+  text-decoration:none;
+  border-bottom:.5px solid #8e62c2;
+} */
+
+.boxplot-box{
+  pointer-events:none;
+}
+.scatter-pt:hover, .boxplot-pt:hover{
+cursor: pointer;
+}
+/* .mouseover.boxplot-pt >circle, .mouseover.scatter-pt >circle{ */
+  .mouseover >circle{
+  fill-opacity:1;
+  stroke:black;
+}
+.mouseover.lineplot-series > path{
+stroke-width:6px;
+stroke-opacity:1;
+}
+
+/* .mouseover > .lineplot-pt{
+  fill-opacity:1;
+  } */
+.scatter-pt-label, .boxplot-pt-label, .lineplot-series-label{
+  pointer-events: none;
+  font-size:0.8em;
+  font-weight:800;
+  filter: drop-shadow(.4px .4px .4px rgba(255, 255, 255, 1));
+  text-shadow: 0px 0px 3px white,0px 0px 3px white;
+}
+.selected > circle{
+  stroke:black;
+  stroke-width:1.75px;
+}
+
+
+.plot-tooltip{
+  position:absolute !important;
+  white-space: nowrap;
+  font-size:12px;
+  line-height: 1.5em;
+  background:white !important;
+  z-index: 10000;
+  padding:.5em;
+  box-shadow: 0.5px 0.5px 10px 0px rgba(141, 137, 137, 0.5) !important; 
+  min-width:200px;
+  pointer-events: none !important;
+}
+svg{
+  overflow:visible !important;
+}
+
+@media (max-width: 600px){
+
+  main, body, #app{
+    font-size:18px !important;
+  }
+  h1{
+    font-size:2.2em !important;
+  }
+  h2{
+    font-size:1.8em !important;
+  }
+}
+
+
+@media (min-width: 1280px){
+  main, body, #app{
+    font-size:16px !important;
+  }
+  .v-container {
+    max-width: 1100px !important;
+  }
+}
