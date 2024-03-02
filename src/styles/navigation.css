@@ -1,0 +1,106 @@
+/* navigation */
+.theme--light.v-navigation-drawer {
+    box-shadow: 0.5px 0.5px 15px 0px rgba(220, 220, 220, 0.5) !important; 
+}
+
+
+.v-ripple__container {
+    display:none !important;
+}
+
+ /* dark */
+/* .theme--dark .v-list--nav .v-list-item, 
+.theme--dark .v-list--nav .v-list-item:before {
+  border-radius: 20px;
+} */
+
+.theme--dark .v-list--nav .v-list-item.v-list-item--active{
+    background-color:#0E7AFF !important;
+    color: white !important;
+}
+ 
+.theme--dark .v-list-item--active::before {
+    opacity: 0!important;
+    background-color:#0E7AFF !important;
+}
+ /* light */
+.theme--light .v-list-item--active::before{
+    opacity: .1 !important;
+    background-color:#0E7AFF !important;
+    color:#0E7AFF !important;
+}
+.theme--light .v-list-item--active > *{
+    color:#0E7AFF !important;
+}
+.theme--dark .v-list-item--active > *{
+    color:white !important;
+}
+
+.theme--light .list-item-h1.v-list-item--active::before
+{
+    opacity: 0 !important;
+}
+.v-list--nav.sub-drawer {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.list-item-h1>*{
+    font-weight:700 !important;
+    /* color:#F36C3E !important; */
+    color:#0E7AFF;
+}
+.list-item-h1.v-list-item--active:hover> *,
+.list-item-h1:hover >*
+{
+    opacity:.8;
+    /* color:#FFA427 !important;
+    color:#F68836 !important; */
+}
+.list-item-h1.v-list-item--link::before{
+    background-color:none !important;
+    opacity:0 !important;
+}
+.list-item-h1:hover{
+    background-color:none !important;
+}
+
+.list-item-h2>*{
+    font-weight: 900 !important;
+    /* color:#0E7AFF !important; */
+    font-size:12px !important;
+    color: #666666 !important;
+}
+
+
+.theme--light.v-list-item--active::before{
+    opacity: .1 !important;
+    background-color:#4699FF !important;
+}
+
+
+.v-select >*,
+.v-menu__content>*,
+.v-autocomplete__content>*,
+.v-select__selections>*.grey--text.text-caption{
+    font-family: 'Archivo Narrow', 'Arial Narrow', sans-serif !important;
+    font-weight:400 !important;
+}
+/* .v-label{
+    font-family: 'Inter Tight', sans-serif !important;
+} */
+.v-label.v-label--active.theme--light{
+    font-size:0.75rem !important;
+}
+.v-input__icon {
+    min-width: 1rem !important;
+    width: 1rem !important;
+    height:1rem !important;
+}
+
+.v-input__icon.v-input__icon--clear >* {
+    font-size: 1rem !important;
+}
+
+.v-select.v-input--dense .v-chip {
+    margin: 0 1px 0 0px;
+}

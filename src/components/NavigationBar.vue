@@ -19,6 +19,9 @@
               transition="scale-transition"
             />
         </v-tab>
+      <v-tab to="/minecraft">
+        Minecraft Map
+      </v-tab>
         <v-spacer></v-spacer>
 
           <v-tab :ripple="false" key="experiments" to="/experiments">Experiments</v-tab>
